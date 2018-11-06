@@ -1,1 +1,2 @@
-# workspace
+# Workspace
+Organização de recursos
