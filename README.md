@@ -60,7 +60,7 @@
 
 #### Easy video conversations
 - [Zoom](https://zoom.us)
-- [Appear](https://appear.in)
+- [Whereby](https://whereby.com)
 - [Wire](https://wire.com)
 
 
