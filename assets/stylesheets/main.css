@@ -1,0 +1,144 @@
+:root {
+  --primary: #fdb54a;
+  --secondary: #ffd479;
+  --link-color: #fff;
+  --border-color: #111;
+  --heading-font-color: var(--primary);
+  --background-color: #282c34;
+  --sidebar-color: #373d49;
+  --navbar-color: #1c1e24;
+  --navbar-color-hover: #272a33;
+  --sidebar-color-hover: #464e5f;
+  --sidebar-color-focus: #57637c;
+  --category-background-color: #1c1e24;
+  --category-background-color-hover: #24272e;
+  --light-border-color: hsla(0,0%,100%,0.1);
+  --toolbar-background-color: #181818;
+  --toolbar-color: #eee;
+  --font-color: #d0d5df;
+  --dark-font-color: rgba(235,240,255,0.5);
+  --bright-font-color: #eee;
+  --input-background: rgba(0,0,0,0.3);
+  --blockquote-background-color: rgba(0,0,0,0.3);
+  --blockquote-color: #b3b9c5;
+  --black: #111;
+  --inline-code-background-color: #393e4b;
+  --inline-code-color: #d0d5df;
+  --dark-opacity: rgba(0,0,0,0.2);
+  --dark-opacity-hover: rgba(0,0,0,0.3);
+  --reverse: var(--background-color);
+  --scrollbar: var(--navbar-color);
+  --scrollbar-track: var(--sidebar-color-hover);
+  --yellow: #ffd479;
+  --button-color: #6b76f3;
+  --button-font-color: #fff;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #f5f5f5;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Neue",
+    sans-serif;
+    margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #1c1e24;
+  color: #f5f5f5;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+
+.workspace {
+  background-color: #282c34;
+  display: flex;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.workspace-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0 10px 10px;
+}
+
+.workspace-column {
+  background: var(--dark-opacity);
+  border: 1px solid var(--border-color);
+  color: var(--dark-font-color);
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 380px;
+}
+
+.workspace-column-header {
+  background: #1c1e24;
+  color: #fdb54a;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 15px 20px;
+}
+
+.workspace-column-subtitle {
+  background: transparent;
+  color: var(--secondary);
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.workspace-column-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  margin: 0;
+  padding: 10px 10px 0;
+  list-style: none;
+}
+
+.workspace-column-footer {
+  padding: 10px;
+  font-size: 0.875rem;
+  border-top: 1px solid #111;;
+}
+
+.card {
+  padding: 20px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--primary);
+  background-color: #1c1f24;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card-url {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.card:hover {
+  background: var(--primary);
+  color: var(--background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
