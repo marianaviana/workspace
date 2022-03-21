@@ -87,7 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
-  width: 380px;
+  width: 400px;
 }
 
 .workspace-column-header {
