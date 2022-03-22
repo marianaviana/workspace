@@ -1,6 +1,6 @@
 :root {
-  --primary: #fdb54a;
-  --secondary: #ffd479;
+  --primary: #2f6a9a;
+  --secondary: #61afef;
   --link-color: #fff;
   --border-color: #111;
   --heading-font-color: var(--primary);
@@ -64,7 +64,7 @@ body {
   background-color: #1c1e24;
   color: #f5f5f5;
   flex-shrink: 0;
-  padding: 1rem;
+  padding: 12px;
 }
 
 .workspace {
@@ -83,6 +83,7 @@ body {
 .workspace-column {
   background: var(--dark-opacity);
   border: 1px solid var(--border-color);
+  border-radius: 25px 25px 0 0;
   color: var(--dark-font-color);
   display: flex;
   flex-direction: column;
@@ -91,19 +92,34 @@ body {
 }
 
 .workspace-column-header {
-  background: #1c1e24;
-  color: #fdb54a;
-  font-size: 0.875rem;
+  background: var(--primary);
+  border-radius: 25px 25px 0 0;
+  color: #1c1e24;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
   font-weight: bold;
   padding: 15px 20px;
+  text-align: center;
+}
+
+.workspace-column-header > i {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .workspace-column-subtitle {
   background: transparent;
   color: var(--secondary);
-  font-size: 0.875rem;
+  display: flex;
+  font-size: 16px;
   font-weight: bold;
   padding: 10px;
+}
+
+.workspace-column-subtitle > i {
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .workspace-column-list {
@@ -118,7 +134,7 @@ body {
 
 .workspace-column-footer {
   padding: 10px;
-  font-size: 0.875rem;
+  font-size: 12px;
   border-top: 1px solid #111;;
 }
 
@@ -133,12 +149,12 @@ body {
 }
 
 .card-url {
-  color: var(--link-color);
+  color: var(--dark-font-color);
   text-decoration: none;
 }
 
 .card:hover {
   background: var(--primary);
-  color: var(--background-color);
+  color: var(--font-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
